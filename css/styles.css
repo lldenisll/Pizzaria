@@ -84,6 +84,41 @@ body {
   border: 2px solid #3F0C1F;
 }
 
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background: url('../img/kristina-bratko-nP11TkjxJ7s-unsplash.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../img/nathan-dumlao-IylDgTHzOUs-unsplash.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
 /* END HOME PAGE */
 
 /********** Large devices only **********/
@@ -171,6 +206,12 @@ body {
 }
 
 
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
@@ -187,4 +228,10 @@ body {
     padding: 0;
   }
 }
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}
+
 
